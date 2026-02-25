@@ -1,0 +1,38 @@
+@import "tailwindcss";
+
+
+@font-face {
+  font-family: my-font;
+  src: url('./assets/font/Raleway-Regular.ttf') format("truetype");
+}
+
+@font-face {
+  font-family: login-header;
+  src: url('./assets/font/Raleway-Bold.ttf') format("truetype");
+}
+
+@font-face {
+  font-family: login-label;
+  src: url('./assets/font/Raleway-SemiBold.ttf') format("truetype");
+}
+
+@font-face {
+  font-family: swiggy-medium;
+  src:url('assets/font/Swiggy-Medium.woff2') format("woff2");
+}
+
+@font-face {
+  font-family: swiggy-bold;
+  src:url('assets/font/Swiggy-Bold.woff2') format("woff2");
+}
+
+@theme{
+  --font-login-label:login-label;
+  --font-my-font:my-font; 
+  --font-login-header:login-header;
+  --font-swiggy-medium:swiggy-medium; 
+  --font-swiggy-bold:swiggy-bold;
+}
+.scrollbar-none::-webkit-scrollbar {
+  display: none;
+}
